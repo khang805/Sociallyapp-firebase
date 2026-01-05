@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="420dp"
+        android:layout_height="140dp"
+
+        android:layout_marginTop="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/useless"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/screenshot_2025_09_09_092953"
+        app:layout_constraintTop_toBottomOf="@id/image1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ar_one_sans_semibold"
+        android:textSize="20dp"
+        android:text="jacob_w"
+        android:id="@+id/jacob"
+        android:textFontWeight="100"
+        app:layout_constraintTop_toBottomOf="@id/image2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></TextView>
+<TextView
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    app:layout_constraintTop_toBottomOf="@+id/jacob"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:background="@drawable/buttonbrown"
+    android:id="@+id/login"
+    android:text="Login"
+    android:clickable="true"
+    android:textColor="@color/white"
+    android:gravity="center"
+    android:layout_marginTop="15dp"
+
+    android:textSize="20dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#99413f"
+        android:id="@+id/signup"
+        android:clickable="true"
+        android:fontFamily="@font/ar_one_sans_semibold"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textFontWeight="100"
+        android:text="Switch accounts"></TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#80000000"
+android:id="@+id/line1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="80dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dont have an account?"
+        android:textColor="#99413f"
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        android:layout_marginTop="10dp"
+        android:id="@+id/dont"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ar_one_sans_semibold"
+        android:textFontWeight="100"
+        android:text="Sign up"
+        android:id="@+id/noAccount"
+        android:clickable="true"
+        android:textColor="#99413f"
+        app:layout_constraintStart_toEndOf="@id/dont"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        android:layout_marginLeft="5dp"
+      ></TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>

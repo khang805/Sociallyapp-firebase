@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:elevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/following"
+                android:clickable="true"
+                android:text="Following"
+                android:textSize="16sp"
+                android:textColor="#262626"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="You"
+                android:id="@+id/you"
+                android:textSize="16sp"
+                android:textColor="#8E8E8E"
+                android:fontFamily="sans-serif"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/followingIndicator"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/brown" />
+
+            <View
+                android:id="@+id/youIndicator"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#D3D3D3" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/feedContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="24dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:id="@+id/home"
+            android:src="@drawable/ic_home"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:clickable="true"
+            android:id="@+id/search"
+            android:layout_weight="1"
+            android:src="@drawable/ic_search"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:clickable="true"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:id="@+id/add"
+            android:src="@drawable/ic_add"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/heart"
+            android:src="@drawable/heart_filled"
+            android:scaleType="centerInside"
+            />
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/profile"
+            android:src="@drawable/ic_profile"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+</LinearLayout>

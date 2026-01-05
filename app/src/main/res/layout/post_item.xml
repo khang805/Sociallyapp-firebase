@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/post_profile_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/joshua"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:id="@+id/post_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ar_one_sans_semibold"
+                android:text="joshua_i"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/post_options"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:clickable="true"
+            android:src="@drawable/ic_more" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/post_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/post_like_button"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:clickable="true"
+            android:src="@drawable/ic_heart" />
+
+        <ImageView
+            android:id="@+id/post_comment_button"
+            android:layout_width="28dp"
+            android:clickable="true"
+            android:layout_height="28dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ic_comment" />
+
+        <ImageView
+            android:id="@+id/post_share_button"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:clickable="true"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ic_share" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/post_save_button"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:clickable="true"
+            android:src="@drawable/ic_save" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/post_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/likes_text"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:fontFamily="@font/ar_one_sans" />
+
+    <TextView
+        android:id="@+id/post_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View all 0 comments"
+        android:textSize="12sp"
+        android:textColor="#C5C5C5"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="4dp"
+        android:fontFamily="@font/ar_one_sans" />
+
+    <TextView
+        android:id="@+id/post_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        android:text="@string/game"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/ar_one_sans" />
+
+</LinearLayout>

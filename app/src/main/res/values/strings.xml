@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">assignment 1</string>
+
+
+    <string name="names">Full name</string>
+    <string name="username">Username</string>
+    <string name="name">Your Name</string>
+    <string name="Lname">"Your Last name</string>
+    <string name="DOB">Date of Birth</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="likes_text">Liked by <b>craig_love</b> and <b>44,686 others</b></string>
+    <string name="game"><b>joshua_l</b>  The game in Japan was amazing and I want to share some photos</string>
+</resources>

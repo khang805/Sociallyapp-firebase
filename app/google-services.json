@@ -1,0 +1,28 @@
+{
+  "project_info": {
+    "project_number": "462023120399",
+    "project_id": "sociallyapp-37746"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462023120399:android:049e5ba22a79312f37357a",
+        "android_client_info": {
+          "package_name": "com.example.assignment1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr5ygvNkiGpwzGfxOSJ90unRjIOLTGfNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
