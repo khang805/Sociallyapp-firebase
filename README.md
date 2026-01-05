@@ -116,7 +116,7 @@ The application is built upon the **Model-View-ViewModel (MVVM)** architectural 
 
  1. Clone the Repository
 ```bash
-git clone [([https://github.com/your-username/socially-android.git](https://github.com/khang805/sociallyapp-firebase.git))]
+git clone [([https://github.com/khang805/Sociallyapp-firebase])]
 cd socially-android
 
  2. Firebase Setup:
