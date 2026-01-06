@@ -61,7 +61,7 @@ The application is built upon the **Model-View-ViewModel (MVVM)** architectural 
 * **Functionality:** Users can create posts with images and captions. A central feed displays posts from followed users.
 * **Implementation:**
     * **Data Model:** Post data (author ID, caption, timestamp, likes count) is stored in **Realtime database** for powerful querying and filtering capabilities.
-    * **Storage:** Post images are uploaded to **Firebase Storage**. The resulting download URL is saved within the corresponding Firestore document.
+    * **Storage:** Post images are uploaded to **Realtime database**. The resulting download URL is saved within the corresponding Firestore document.
     * **Image Loading:** **Glide** is used to fetch, cache, and display these images efficiently.
 
 ### 3.4. Video Calling
@@ -79,7 +79,7 @@ The application is built upon the **Model-View-ViewModel (MVVM)** architectural 
 ### 3.6. Story / Status Uploading
 * **Functionality:** Users can upload temporary status updates (images/videos) that disappear after 24 hours.
 * **Implementation:**
-    * **Storage:** Media is uploaded to a dedicated `stories/` bucket in **Firebase Storage**.
+    * **Storage:** Media is uploaded to a dedicated `stories/` bucket in **Realtime database**.
     * **Data Model:** Metadata (timestamp, media URL) is stored in Firestore. The app filters out stories older than 24 hours during the fetch query.
     * **UI:** A horizontal RecyclerView at the top of the main feed displays active stories from followed users using circular indicators.
 
